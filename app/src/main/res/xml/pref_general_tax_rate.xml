@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- The tax rate in % -->
+    <EditTextPreference
+        android:key="@string/key_pref_tax_rate"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="@string/pref_summary_tax_rate"
+        android:title="@string/pref_title_tax_rate" />
+
+
+</PreferenceScreen>

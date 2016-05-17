@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- The boss email address if the ownership status is worker -->
+    <EditTextPreference
+        android:defaultValue="null"
+        android:inputType="textEmailAddress"
+        android:key="@string/key_pref_owner_email_address"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="@string/pref_summary_owner_email_address"
+        android:title="@string/pref_title_owner_email_address" />
+
+
+</PreferenceScreen>

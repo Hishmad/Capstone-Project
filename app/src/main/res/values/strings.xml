@@ -1,0 +1,292 @@
+<resources>
+
+
+    <!-- BaseActivity.java -->
+    <string name="notify_title_image_upload">Upload image has failed</string>
+    <string name="log_play_service">This device is not supported</string>
+    <string name="toast_no_play_service">This device does not support Google Play Services</string>
+
+
+    <!-- MainActivity.java -->
+    <string name="merchant">Merchant</string>
+    <string name="message_future_development" translatable="false">This for GCM, future development</string>
+    <string name="title_sliding_tab_category">Category</string>
+    <string name="title_sliding_tab_item">Item</string>
+    <string name="title_sliding_tab_worker">Co-workers</string>
+
+
+    <!-- AddNewCategoryFormFragment.java -->
+    <string name="error_field_cant_be_empty">Can\'t be empty</string>
+    <string name="category_dialog_title">Type a new category</string>
+
+
+    <!-- category_master_form_fragment.xml -->
+    <string name="hint_category">Type a new category in this field</string>
+    <string name="save_button">SAVE</string>
+
+
+    <!-- activity main.xml -->
+    <string name="tabs_title_category_item_and_co_workers">Tabs title, Category, Item and Co-workers</string>
+    <string name="this_view_pager_has_three_fragments">This view pager has three fragments</string>
+    <string name="floating_action_button">Floating Action Button</string>
+
+
+    <!-- menu_base.xml -->
+    <string name="menu_transactions">Transactions</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_about">About</string>
+    <string name="menu_action_logout">Logout</string>
+
+
+    <!-- fragment_detail_master_item.xml -->
+    <string name="admob_banner">Banner</string>
+
+
+    <!-- AddNewItemMasterFormFragment.java -->
+    <string name="default_currency" translatable="false">IDR</string>
+    <string name="warning_field_cant_be_empty">Both item number and description can not be empty</string>
+
+
+    <!-- item_master_form_image_adapter.xml -->
+    <string name="the_item_images">The item images</string>
+
+
+    <!-- item_master_form_fragment.xml -->
+    <string name="hint_item_number">Item Number</string>
+    <string name="content_desc_barcode_scanner">Barcode scanner</string>
+    <string name="hint_item_description">Item Description</string>
+    <string name="prompt_category">Category</string>
+
+
+    <!-- item_recycler_adapter.xml -->
+    <string name="product_image_content_description">Product image</string>
+
+
+    <!-- item_recycler_view.xml -->
+    <string name="a_list_of_item_master">A list of item master</string>
+
+
+    <!-- DetailMasterItemFormFragment.java -->
+    <string name="alert_dialog_title_update_price">Update Price</string>
+    <string name="alert_dialog_message_update_price">Enter new price:</string>
+    <string name="alert_dialog_title_update_unit_of_measure">Update Unit of Measure</string>
+    <string name="alert_dialog_message_unit_of_measure">Enter new UoM</string>
+    <string name="couldnt_find_the_image_file">Could\'nt find the image file, please try again</string>
+
+
+    <!-- AddNewItemMasterFormFragment.java -->
+    <!-- DetailMasterItemFormFragment.java -->
+    <!-- DetailSalesFragment.java-->
+    <!-- AddNewSalesFragment.java -->
+    <!-- AddNewPurchaseFragment.java -->
+    <string name="toast_image_capture_failed">System filed</string>
+
+
+    <!-- DetailSalesFragment.java -->
+    <!-- AddNewSalesFragment.java -->
+    <!-- AddNewPurchaseFragment.java -->
+    <string name="no_data_found">No data found</string>
+
+
+
+    <!-- AddNewItemMasterFormFragment.java -->
+    <!-- ItemMasterRecyclerViewFragment.java -->
+    <!-- DetailMasterItemFormFragment.java -->
+    <!-- SalesPendingFragment.java -->
+    <!-- AddNewSalesFragment.java -->
+    <!-- AddNewPurchaseFragment.java -->
+    <!-- PurchasePendingFragment.java -->
+    <string name="alert_dialog_title_delete">DELETE</string>
+    <string name="alert_dialog_message">Are you sure you want to delete this?</string>
+    <string name="alert_dialog_positive_button_yes">Yes</string>
+    <string name="alert_dialog_negative_button_cancel">Cancel</string>
+
+
+    <!-- SalesPendingFragment.java -->
+    <!-- PurchasePendingFragment.java -->
+    <string name="share_tile">Your invoice : </string>
+
+
+    <!-- item_master_form_fragment.xml -->
+    <!-- fragment_detail_master_item.xml -->
+    <string name="hint_currency">Currency</string>
+    <string name="hint_price">Price</string>
+    <string name="hint_unit_of_measure">Unit of measure</string>
+
+
+    <!-- fragment_detail_master_item.xml -->
+    <string name="currency_value">Currency value</string>
+    <string name="price_value">Price value</string>
+    <string name="uom_value">UoM value</string>
+    <string name="available_stock">Available Stock</string>
+    <string name="stock">stock</string>
+
+
+    <!-- coworker_adapter.xml -->
+    <string name="email_address">Email Address</string>
+    <string name="worker_name">Worker name</string>
+    <string name="allow_to_connect">Allow to connect</string>
+
+
+    <!-- Title activity -->
+    <string name="app_name" translatable="false">New Point Of Sales</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_sales">Sales Activity</string>
+    <string name="title_activity_transaction">Transaction Activity</string>
+    <string name="title_activity_inventory">Inventory</string>
+
+
+    <!-- Menu items -->
+    <string name="action_settings">Settings</string>
+    <string name="sales_menu_item">Sales</string>
+    <string name="save_menu">save</string>
+
+
+    <!-- Login and Create Account Screen  -->
+    <string name="image_view_logo_image">Logo Image</string>
+    <string name="hint_enter_email">Enter your email</string>
+    <string name="hint_enter_password">Enter password</string>
+    <string name="button_signin_with_password">SIGN IN</string>
+    <string name="text_dont_have_account">Don\'t have an account?</string>
+    <string name="button_create_account">Sign Up</string>
+
+
+    <!-- Instructions and loading text -->
+    <string name="progress_dialog_loading">Loading…</string>
+    <string name="progress_dialog_authenticating_with_firebase">Authenticating with Firebase…</string>
+    <string name="progress_dialog_creating_user_with_firebase">Attempting to create account…</string>
+    <string name="progress_dialog_check_inbox">Please check your inbox for your password</string>
+
+
+    <!-- Google Errors -->
+    <string name="error_message_failed_sign_in_no_network">There was a problem with the network connection.\nAre you sure you\'re connected to the internet?</string>
+    <string name="log_error_invalid_provider">"Invalid provider: "</string>
+    <string name="google_error_recoverable_oauth_error">"Recoverable Google OAuth error: "</string>
+    <string name="google_error_google_play_services_not_available">Google Play Services are not available.</string>
+    <string name="google_error_trying_to_connect_google_api">Trying to connect to Google API</string>
+    <string name="google_error_auth_with_google">"Error authenticating with Google: "</string>
+    <string name="google_error_network_error">"Network error: "</string>
+    <string name="google_error_cant_connect_to_api">Are you sure that you set up a project for your app?
+        Check out : https://console.developers.google.com/project. Also make sure you have all the proper
+    gradle dependencies</string>
+
+
+    <!-- OAuth Format -->
+    <string name="oauth2_format" translatable="false">oauth2:%s</string>
+
+
+    <!-- AdMob unit ID, sample for testing only -->
+    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+
+
+    <!-- EditTextPreference, Merchant name -->
+    <string name="key_pref_merchant_name" translatable="false">merchant_name</string>
+    <string name="pref_merchant_title_display_name">Merchant name</string>
+    <string name="pref_summary_merchant_name">Type your shop name</string>
+
+
+    <!-- EditTextPreference, Tax id -->
+    <string name="key_pref_tax_id" translatable="false">tax_id</string>
+    <string name="pref_tax_id_default_value" translatable="false">none</string>
+    <string name="pref_tax_id_title">Tax Id</string>
+    <string name="pref_summary_tax_id">Type your business tax ID</string>
+
+
+    <!-- EditTextPreference, Tax Rate -->
+    <string name="key_pref_tax_rate" translatable="false">tax_rate</string>
+    <string name="pref_title_tax_rate">Tax rate</string>
+    <string name="pref_summary_tax_rate">The Value Add Tax Rate</string>
+
+
+    <!-- EditTextPreference, Discount Rate -->
+    <string name="key_pref_discount_rate" translatable="false">discount_rate</string>
+    <string name="pref_title_discount_rate">Discount rate</string>
+    <string name="pref_summary_discount_rate">Total invoice discount rate</string>
+
+
+    <!-- ListPreference, Currency -->
+    <string name="key_pref_currency" translatable="false">pref_currency</string>
+    <string name="pref_title_currency">Currency</string>
+    <string name="pref_summary_currency">Transaction currency</string>
+
+
+    <!-- ListPreference, Ownership status-->
+    <string name="key_pref_ownership_status" translatable="false">pref_ownership_status</string>
+    <string name="pref_default_value_ownership_status" translatable="false">owner</string>
+    <string name="pref_title_ownership">Ownership status</string>
+    <string name="pref_summary_ownership_status">Select the ownership status</string>
+
+
+    <!-- EditTextPreference, Boss email -->
+    <string name="key_pref_owner_email_address" translatable="false">owner_email</string>
+    <string name="pref_default_value_boss_email" translatable="false">null</string>
+    <string name="pref_title_owner_email_address">Owner email address</string>
+    <string name="pref_summary_owner_email_address">Type the owner email</string>
+
+
+    <!-- sales_pending_adapter.xml -->
+    <string name="hint_time_and_date_stamp">Time and Date Stamp</string>
+    <string name="hint_customer_name">Customer name</string>
+    <string name="hint_invoice_amount">Invoice amount</string>
+    <string name="share_this_transaction">Share this transaction</string>
+
+
+
+    <!-- fragment_detail_sales_form.xml -->
+    <string name="hint_sales_customer_name">Customer Name</string>
+    <string name="hint_sales_item_number">Item Number</string>
+    <string name="hint_sales_item_description">Item description</string>
+    <string name="hint_sales_unit_of_measure">Unit of measure</string>
+    <string name="hint_sales_sale_price">Sale price</string>
+    <string name="hint_sales_currency">Currency</string>
+    <string name="hint_sales_disc">Disc%</string>
+    <string name="hint_sales_quantity">Quantity</string>
+    <string name="hint_sales_discount_rate">Discount rate</string>
+    <string name="hint_sales_tax_rate">Tax rate</string>
+    <string name="hint_sales_tax_value">Tax value</string>
+    <string name="hint_sales_grand_total">Grand Total</string>
+
+
+    <!-- fragment_detail_sales_form.xml -->
+    <!-- fragment_detail_purchase_form.xml-->
+    <string name="lookup_from_the_item_master_dialog">Lookup from the item master dialog</string>
+    <string name="use_the_barcode_scanner">Use the barcode scanner</string>
+    <string name="floating_action_button_to_add_new_sales_item">Floating action bar to add new transaction item</string>
+
+
+    <!-- transaction_adapter_detail_item.xml -->
+    <string name="item_image">Item image</string>
+    <string name="text_item_number">Item Number</string>
+    <string name="text_item_description">Item Description</string>
+    <string name="text_unit_of_measure">Unit of measure</string>
+    <string name="text_price">Price</string>
+    <string name="text_quantity">Quantity</string>
+    <string name="text_currency">Currency</string>
+    <string name="text_discount">Discount %</string>
+    <string name="text_amount">Amount</string>
+
+
+    <!-- fragment_detail_purchase_form.xml -->
+    <string name="text_vendor_name">Vendor Name</string>
+    <string name="purch_item_number">Item Number</string>
+    <string name="purch_description">Description</string>
+    <string name="purch_unit_of_measure">Unit of measure</string>
+    <string name="purch_purchase_price">Purchase price</string>
+    <string name="purch_currency">Currency</string>
+    <string name="purch_disc">Disc%</string>
+    <string name="purch_quantity">Quantity</string>
+    <string name="purch_discount_rate">Discount rate</string>
+    <string name="purch_tax_rate">Tax rate</string>
+    <string name="purch_tax_value">Tax value</string>
+    <string name="purch_grand_total">Grand Total</string>
+
+
+    <!-- purchase_pending_adapter.xml -->
+    <string name="purch_hint_time_and_date_stamp">Time and Date Stamp</string>
+    <string name="purch_hint_vendor_name">Vendor name</string>
+    <string name="purch_hint_invoice_amount">Invoice amount</string>
+
+
+
+
+</resources>

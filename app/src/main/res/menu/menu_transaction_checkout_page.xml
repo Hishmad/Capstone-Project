@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".transaction.activity.AddPointOfSalesActivity">
+
+    <item
+        android:showAsAction="always"
+        android:id="@+id/pending_payment"
+        android:orderInCategory="101"
+        android:title="Save"
+        android:icon="@android:drawable/ic_menu_save"
+        tools:ignore="AppCompatResource" />
+
+</menu>

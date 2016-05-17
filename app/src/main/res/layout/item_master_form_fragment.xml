@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="@dimen/size_full"
+    android:layout_marginStart="@dimen/size_full"
+    card_view:cardCornerRadius="@dimen/card_corner_radius"
+    card_view:cardElevation="@dimen/card_elevation">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/size_full"
+            android:paddingEnd="@dimen/size_full"
+            android:paddingStart="@dimen/size_full">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/item_number_input"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:hint="@string/hint_item_number"
+                    android:inputType="number" />
+
+                <ImageButton
+                    android:id="@+id/bar_code_scanner_item_master_form"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/content_desc_barcode_scanner"
+                    android:src="@android:drawable/ic_menu_search" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/item_desc_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_item_description" />
+
+            <EditText
+                android:id="@+id/unit_of_measure_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_unit_of_measure" />
+
+            <Spinner
+                android:id="@+id/spinner_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:prompt="@string/prompt_category" />
+
+            <EditText
+                android:id="@+id/currency_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_currency" />
+
+            <EditText
+                android:id="@+id/item_price_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hint_price"
+                android:inputType="numberDecimal" />
+
+            <!-- Recycler View here -->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/itemMasterNewList"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/recyclerViewHeight" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- FAB -->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_menu_camera" />
+
+
+</android.support.v7.widget.CardView>
+
+
+
+
+

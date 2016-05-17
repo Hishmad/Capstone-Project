@@ -1,0 +1,82 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'Hishmad'
+            keyPassword 'udaCityCapstone'
+            storeFile file("$rootDir/keystore.jks")
+            storePassword 'udaCityCapstone'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+    defaultConfig {
+        applicationId "com.stockita.newpointofsales"
+        minSdkVersion 21
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+    /* This for anyone following along with the repo. Since you will have a different
+    * root URL, this code loads up a value from your gradle.properties file.
+    */
+    buildTypes.each {
+        it.buildConfigField 'String', 'UNIQUE_FIREBASE_ROOT_URL', UniqueFirebaseRootUrl
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE-FIREBASE.txt'
+        exclude 'META-INF/NOTICE'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    /* Support library */
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.android.support:preference-v7:23.3.0'
+    compile 'com.android.support:design:23.3.0'
+    compile 'com.android.support:recyclerview-v7:23.3.0'
+    compile 'com.android.support:cardview-v7:23.3.0'
+    compile 'com.android.support:support-v4:23.3.0'
+    compile 'com.android.support:support-v13:23.3.0'
+    /* Google Play Services */
+    compile 'com.google.android.gms:play-services-gcm:8.4.0'
+    compile 'com.google.android.gms:play-services-auth:8.4.0'
+    compile 'com.google.android.gms:play-services-ads:8.4.0'
+    compile 'com.firebase:firebase-client-android:2.5.0'
+    /* Third party library */
+    compile 'com.firebaseui:firebase-ui:0.3.1'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    compile 'me.dm7.barcodescanner:zbar:1.8.2'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.cloudinary:cloudinary-android:1.2.0'
+}
+
+apply plugin: 'com.google.gms.google-services'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

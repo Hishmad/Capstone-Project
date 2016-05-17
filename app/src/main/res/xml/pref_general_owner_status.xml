@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Ownership status -->
+    <ListPreference
+        android:defaultValue="@string/pref_default_value_ownership_status"
+        android:entries="@array/array_entries_ownership_status"
+        android:entryValues="@array/array_entry_values_ownership_status"
+        android:key="@string/key_pref_ownership_status"
+        android:summary="@string/pref_summary_ownership_status"
+        android:title="@string/pref_title_ownership" />
+
+
+</PreferenceScreen>

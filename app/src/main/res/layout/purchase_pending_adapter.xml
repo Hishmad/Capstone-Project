@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/transaction_purchase_receiving_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/size_half"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?selectableItemBackground"
+    app:cardElevation="@dimen/card_elevation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true">
+
+            <ImageButton
+                android:id="@+id/image_button_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/share_this_transaction"
+                android:padding="@dimen/size_full"
+                android:src="@drawable/ic_action_social_share" />
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/size_full">
+
+            <TextView
+                android:id="@+id/transaction_purchase_receiving_time_stamp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/purch_hint_time_and_date_stamp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/transaction_purchase_receiving_vendor_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/purch_hint_vendor_name"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/transaction_purchase_receiving_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/purch_hint_invoice_amount"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <!-- Nested recycler view -->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/transaction_purchase_receiving_adapter_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/nested_recycler_view_height" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

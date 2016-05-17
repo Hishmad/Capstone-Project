@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".transaction.activity.AddPurchaseReceivingActivity">
+
+    <item
+        android:id="@+id/pending_payment"
+        android:orderInCategory="101"
+        android:title="Pending payment"/>
+
+    <item
+        android:id="@+id/cash_payment"
+        android:orderInCategory="102"
+        android:title="Cash payment"/>
+
+    <item
+        android:id="@+id/payable_payment"
+        android:orderInCategory="103"
+        android:title="Payable"/>
+
+</menu>
+

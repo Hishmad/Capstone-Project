@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.stockita.newpointofsales" >
+
+    <!-- This permissions required for internet access -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.NETWORK" />
+    <uses-permission android:name="android.premission.USE_CREDENTIALS" />
+
+    <!-- gcm_permission -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- This permission for the camera barcode scanner -->
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".NewPointOfSalesApplication"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- Content Provider -->
+        <provider
+            android:name=".data.ContentProviderPOS"
+            android:authorities="com.stockita.newpointofsales.data.ContentProviderPointOfSale"
+            android:exported="true"
+            android:syncable="true" />
+
+        <!-- Widget Receiver -->
+        <receiver android:name=".widgets.ListAppWidget" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/appwidget" />
+        </receiver>
+
+        <!-- Widget service -->
+        <service android:name=".widgets.DataObserverService" />
+        <service
+            android:name=".widgets.ListWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <!-- Service -->
+        <service
+            android:name=".services.UploadImages"
+            android:exported="false" />
+        <service
+            android:name=".services.DeleteImages"
+            android:exported="false" />
+
+        <!-- Activities -->
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".activities.TransactionActivity"
+            android:label="@string/title_activity_transaction"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".itemMasterPack.newMasterItemPack.AddNewItemMasterFormActivity"
+            android:label="Item Master Input Form"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".salesPack.activity.AddNewSalesActivity"
+            android:label="Add new transaction"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".purchasePack.activity.AddNewPurchaseActivity"
+            android:label="Add new transaction"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".barcodeScanner.BarcodeScanner" />
+        <activity android:name=".itemMasterPack.newMasterItemPack.DetailMasterItemFormActivity" />
+        <activity android:name=".salesPack.activity.DetailSalesActivity" />
+        <activity android:name=".purchasePack.activity.DetailPurchaseActivity" />
+        <activity
+            android:name=".utilities.NewSettingActivity"
+            android:label="General Settings" />
+        <activity android:name=".login.LoginActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

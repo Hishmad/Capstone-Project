@@ -1,0 +1,87 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="size_half">4dp</dimen>
+    <dimen name="size_full">8dp</dimen>
+    <dimen name="card_corner_radius">0dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="card_height">160dp</dimen>
+    <dimen name="card_height_vertical">260dp</dimen>
+    <dimen name="app_bar_height">80dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="g_top_margin">100dp</dimen>
+
+    <!-- LoginActivity -->
+    <dimen name="logo_image_size">100dp</dimen>
+    <dimen name="lists_title_bottom_margin">13dp</dimen>
+    <dimen name="edit_text_padding">14dp</dimen>
+    <dimen name="login_buttons_text_size">15.3sp</dimen>
+    <dimen name="margin_normal">37dp</dimen>
+    <dimen name="input_field_height">50dp</dimen>
+    <dimen name="margin_small">16dp</dimen>
+    <dimen name="lv_header_text_size">10sp</dimen>
+    <dimen name="activity_horizontal_margin_land">64dp</dimen>
+    <dimen name="edit_text_padding_land">6dp</dimen>
+    <dimen name="input_field_height_land">36dp</dimen>
+
+
+    <integer name="number_of_span_four">4</integer>
+    <integer name="number_of_span_three">3</integer>
+    <integer name="number_of_span">2</integer>
+    <integer name="number_of_span_detail_item_master_form">1</integer>
+    <bool name="isLandscape">false</bool>
+    <bool name="isTablet">false</bool>
+
+
+
+    <!-- App bar -->
+    <dimen name="appBarElevation">6dp</dimen>
+
+    <!-- FAB -->
+    <dimen name="fab_elevation">8dp</dimen>
+
+    <!-- Cards -->
+    <dimen name="cardElevation">4dp</dimen>
+    <dimen name="card_half_margin">4dp</dimen>
+    <dimen name="card_full_margin">8dp</dimen>
+    <dimen name="pres_trans_FAB">12dp</dimen>
+
+
+    <!-- fragment_detail_master.xml -->
+    <!-- item_master_form_fragment.xml -->
+    <dimen name="recyclerViewHeight">240dp</dimen>
+
+    <!-- item_recycler_adapter.xml -->
+    <dimen name="item_poster_height">176dp</dimen>
+    <dimen name="item_category_text_size">12sp</dimen>
+
+    <!-- fragment_detail_master_item.xml -->
+    <!-- fragment_detail_purchase_form.xml -->
+    <dimen name="app_bar_layout_height">240dp</dimen>
+    <dimen name="thick_back_margins">16dp</dimen>
+
+    <!-- item_master_form_image_adapter.xml -->
+    <dimen name="image_card_width">240dp</dimen>
+    <dimen name="image_card_height">240dp</dimen>
+
+    <!-- sales_pending_adapter.xml -->
+    <!-- purchase_pending_adapter.xml-->
+    <dimen name="nested_recycler_view_height">200dp</dimen>
+
+    <!-- fragment_detail_sales_form.xml -->
+    <!-- fragment_detail_purchase_form.xml-->
+    <dimen name="item_image_recycler_view_height">248dp</dimen>
+
+    <!-- transaction_adapter_detail_item.xml -->
+    <dimen name="item_image_width">120dp</dimen>
+    <dimen name="item_image_height">240dp</dimen>
+    <dimen name="linear_height">240dp</dimen>
+
+    <!-- fragment_detail_purchase_form.xml-->
+    <dimen name="text_size_extra_large">32sp</dimen>
+
+
+</resources>

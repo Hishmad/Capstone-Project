@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- entries, pref_general_owner_status.xml ListPreference, ownership status -->
+    <string-array name="array_entries_ownership_status">
+        <item>Owner</item>
+        <item>Worker</item>
+    </string-array>
+
+    <!-- entryValues, pref_general_owner_status.xml ListPreference, ownership status -->
+    <string-array name="array_entry_values_ownership_status">
+        <item>owner</item>
+        <item>worker</item>
+    </string-array>
+
+    <!-- entries, -->
+    <string-array name="pref_list_currency_titles">
+        <item>IDR</item>
+        <item>USD</item>
+        <item>JPY</item>
+        <item>AUD</item>
+        <item>EUR</item>
+        <item>GBP</item>
+        <item>CHF</item>
+    </string-array>
+
+    <!-- entryValues -->
+    <string-array name="pref_list_currency_values">
+        <item>IDR</item>
+        <item>USD</item>
+        <item>JPY</item>
+        <item>AUD</item>
+        <item>EUR</item>
+        <item>GBP</item>
+        <item>CHF</item>
+    </string-array>
+</resources>
